@@ -10,7 +10,7 @@ const perPage = 10;
 let currentSort = { key: null, asc: true };
 
 // Fetch JSON
-fetch("LEADER.json")
+fetch("leader.json")
     .then(res => res.json())
     .then(data => {
         leaderboardData = data.map(player => {
